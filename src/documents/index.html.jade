@@ -24,8 +24,9 @@ HideNav: true
   .col-md-6
     div: :markdown
       ## Guides
-    a.btn.btn-default(href="posts/01-quickstart") Quickstart
-    a.btn.btn-default(href="https://github.com/nightscout/nightscout.github.io/wiki") Visit wiki 
+    a.btn.btn-default(href="http://go.nightscout.info") Guides
+    a.btn.btn-default(href="http://www.nightscout.info/wiki/welcome") Visit wiki 
+    a.btn.btn-default(href="/projects/") Ongoing projects and experiments
   .col-md-6
     div: :markdown
       ## Groups
@@ -35,11 +36,13 @@ HideNav: true
       *  [#wearenotwaiting](https://twitter.com/hashtag/wearenotwaiting?src=hash)
       *  [DiabetesMine](http://www.diabetesmine.com/we-are-not-waiting)
       *  [User Discussion Forums For Install Questions etc](http://www.nightscout.info/forum/)
+      *  [Our Friends: Healthy Outcomes](https://www.healthyoutcomes.com/register/Step1.aspx)
+      *  [Our Friends: Tidepool](https://tidepool.org/)
   .col-md-6
     div: :markdown
       ## Github (the code)
       Suite of projects that compose Nightscout.
-      * [dexcom-uploader](https://github.com/nightscout/dexcom-uploader)
+      * [Android-Uploader](https://github.com/nightscout/android-uploader)
       * [cgm-remote-monitor](https://github.com/nightscout/cgm-remote-monitor)
       * [pebble-cgm](https://github.com/jasoncalabrese/cgm-pebble)
       * [project-glu](https://github.com/jasoncalabrese/project-glu) - Our
@@ -56,27 +59,7 @@ HideNav: true
       Confused? [File an issue!](https://github.com/nightscout/nightscout.github.io/issues)
       * [Videos-How To](https://www.youtube.com/channel/UChgmRw-YYFCtLbRVFDlSMHA)
       * [Wiki-For Technical knowledge Sharing](https://github.com/nightscout/nightscout.github.io/wiki)
-      * [NightScout Uploader Devices](https://github.com/nightscout/nightscout.github.io/wiki/NightscoutUploaders): Phones, Tablets, Set Top Boxes
-      * [Carriers](https://github.com/nightscout/nightscout.github.io/wiki/Carriers)
+      * [Install Guide Printable Format](https://github.com/nightscout/nightscout.github.io/blob/source/src/files/pdfs/Install%20Guide%202014.pdf)
       
-      
-    p
-  .col-md-6
-    div: :markdown
-      ## Posts
-    ul
-      each doc in getCollection('posts').toJSON()
-        li
-          span= doc.date.toDateString()
-          |  &raquo;&nbsp;
-          a(href=doc.url)= doc.title
-  .col-md-6
-    div: :markdown
-      ## Quickstart
-    ul
-      each doc in getCollection('quickstart').toJSON()
-        li
-          span= doc.date.toDateString()
-          |  &raquo;&nbsp;
-          a(href=doc.url)= doc.title
+ 
 
